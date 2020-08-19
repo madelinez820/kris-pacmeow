@@ -1,0 +1,16 @@
+{
+  "name": "pacmanjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/howler": "^2.0.2",
+    "connect": "^3.6.2",
+    "serve-static": "^1.12.3"
+  }
+}

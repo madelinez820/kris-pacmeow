@@ -1,0 +1,7 @@
+js
+*.user
+/WebApplication1/bin
+.vs
+.vscode
+/node_modules
+/App_Data
