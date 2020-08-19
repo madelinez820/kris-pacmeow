@@ -9,7 +9,7 @@ I played around with this repo (https://github.com/SteveDunn/Pacman) to create t
 - ```tsc```
 - ```cd dist```
 - ```npm start```
-- play it on ```http://localhost:8080/```
+- play it on http://localhost:8080/
 
 
 ## License
