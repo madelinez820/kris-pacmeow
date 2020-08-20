@@ -75,21 +75,21 @@ export class AttractAct extends Act {
 
         const timeForEachOne = 2100;
 
-        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "red", "SHADOW", "BLINKY", pos);
+        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "red", "MR. MEOWCHU", pos);
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._pinky, "pink", "SPEEDY", "PINKY", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._pinky, "pink","BUNNYSITO", pos);
         }, timeForEachOne);
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._inky, "cyan", "BASHFUL", "INKY", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._inky, "cyan", "Lea", pos);
         }, timeForEachOne * 2);
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._clyde, "yellow", "POKEY", "CLYDE", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._clyde, "yellow", "MR. FATSO", pos);
         }, timeForEachOne * 3);
 
         setTimeout(() => {
@@ -97,7 +97,7 @@ export class AttractAct extends Act {
         }, timeForEachOne * 4);
     }
 
-    drawGhostDescriptor = (canvas: Canvas, ghost: SimpleGhost, color: string, name: string, nickname: string, pos: Point) => {
+    drawGhostDescriptor = (canvas: Canvas, ghost: SimpleGhost, color: string, name: string, pos: Point) => {
         ghost.position = pos;
 
         canvas.drawSprite(ghost);
@@ -108,10 +108,6 @@ export class AttractAct extends Act {
             canvas.drawText(`-${name}`, color, pos);
             pos = pos.add(new Point(90, 0));
         }, 1000);
-
-        setTimeout(() => {
-            canvas.drawText(`"${nickname}"`, color, pos);
-        }, 1500);
     }
 
     private startDemoGame() {
