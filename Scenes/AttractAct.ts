@@ -75,7 +75,7 @@ export class AttractAct extends Act {
 
         const timeForEachOne = 2100;
 
-        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "red", "MR. MEOWCHU", pos);
+        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "cyan", "MR. MEOWCHU", pos);
 
         setTimeout(() => {
            pos = pos.add(gap);
@@ -84,12 +84,12 @@ export class AttractAct extends Act {
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._inky, "cyan", "Lea", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._inky, "green", "Crocosaur", pos);
         }, timeForEachOne * 2);
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._clyde, "yellow", "MR. FATSO", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._clyde, "yellow", "Lea", pos);
         }, timeForEachOne * 3);
 
         setTimeout(() => {
