@@ -126,11 +126,13 @@ export class AttractAct extends Act {
         }
 
         if (GameContext.keyboard.wasKeyPressed(Keyboard.enter)) {
+            Engine.gameSounds.muteAll();
             Engine.gameSounds.unmuteAll();
             return ActUpdateResult.Finished;
         }
 
         if (GameContext.keyboard.wasKeyPressed(Keyboard.five)) {
+            Engine.gameSounds.muteAll();
             Engine.gameSounds.unmuteAll();
             Engine.coinInserted();
             this._nextAct = new StartButtonAct();
