@@ -8,6 +8,9 @@ export class GameSoundPlayer {
     private readonly _siren: SoundPlayer;
     private readonly _frightened: SoundPlayer;
     private readonly _ghostEyes: SoundPlayer;
+    private readonly _munch1: SoundPlayer;
+    private readonly _munch2: SoundPlayer;
+    private readonly _cutscene: SoundPlayer;
 
     constructor(private readonly _loader: SoundLoader) {
 
@@ -20,7 +23,11 @@ export class GameSoundPlayer {
         this._frightened = _loader.getSound(SoundName.Frightened);
         this._ghostEyes = _loader.getSound(SoundName.GhostEyes);
 
-         this._siren =  _loader.getSound(SoundName.Siren1);
+        this._siren =  _loader.getSound(SoundName.Siren1);
+
+        this._munch1 = _loader.getSound(SoundName.Munch1);
+        this._munch2 = _loader.getSound(SoundName.Munch2);
+        this._cutscene = _loader.getSound(SoundName.CutScene);
 
         this._frightened.loop = true;
         this._ghostEyes.loop = true;
@@ -30,6 +37,10 @@ export class GameSoundPlayer {
 
         this._siren.loop = true;
         this._siren.volume = .5;
+        this._frightened.volume = .20;
+        this._munch1.volume = .5;
+        this._munch2.volume = .5;
+        this._cutscene.volume = .4;
     }
 
     private _volumeChanged = (e: any) => {
