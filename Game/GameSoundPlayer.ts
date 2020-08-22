@@ -66,26 +66,12 @@ export class GameSoundPlayer {
             }
         };
 
-        const handleSiren = (pillsEaten: number) => {
+        const handleSiren = () => {
             if (thereAreEyes) {
                 return;
             }
 
-            let level: number;
-
-            if (pillsEaten < 117) {
-                level = 0;
-            } else if (pillsEaten < 180) {
-                level = 1;
-            } else if (pillsEaten < 212) {
-                level = 2;
-            } else if (pillsEaten < 230) {
-                level = 3;
-            } else {
-                level = 4;
-            }
-
-            this.playSiren(level);
+            this.playSiren();
         };
 
         const handleEyes = () => {
@@ -98,7 +84,7 @@ export class GameSoundPlayer {
 
         if (currentPlayerStats != null) {
             handleFright();
-            handleSiren(currentPlayerStats.levelStats.pillsEaten);
+            handleSiren();
             handleEyes();
         }
     }
@@ -166,7 +152,7 @@ export class GameSoundPlayer {
         }
     }
 
-    private playSiren(level: number) {
+    private playSiren() {
         const siren = this._siren;
         if (!siren.isPlaying) {
             siren.play();
