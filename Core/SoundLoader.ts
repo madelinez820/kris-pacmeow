@@ -4,7 +4,7 @@ import {SoundLookup} from "./SoundLookup";
 
 export class SoundLoader {
     private _loadedCount = 0;
-    private readonly _itemsToLoad = 12;
+    private readonly _itemsToLoad = 13;
 
     private readonly _sounds: SoundLookup;
 
