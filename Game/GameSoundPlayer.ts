@@ -5,7 +5,7 @@ import { GhostState } from "../Ghosts/_exports";
 declare var Howler: any;
 
 export class GameSoundPlayer {
-    private readonly _sirens: SoundPlayer[];
+    private readonly _siren: SoundPlayer;
     private readonly _frightened: SoundPlayer;
     private readonly _ghostEyes: SoundPlayer;
 
@@ -20,13 +20,7 @@ export class GameSoundPlayer {
         this._frightened = _loader.getSound(SoundName.Frightened);
         this._ghostEyes = _loader.getSound(SoundName.GhostEyes);
 
-        this._sirens = [
-            _loader.getSound(SoundName.Siren1),
-            _loader.getSound(SoundName.Siren2),
-            _loader.getSound(SoundName.Siren3),
-            _loader.getSound(SoundName.Siren4),
-            _loader.getSound(SoundName.Siren5)
-        ];
+         this._siren =  _loader.getSound(SoundName.Siren1);
 
         this._frightened.loop = true;
         this._ghostEyes.loop = true;
@@ -34,10 +28,8 @@ export class GameSoundPlayer {
         this._ghostEyes.mute();
         this._ghostEyes.play();
 
-        this._sirens.forEach(s => {
-            s.loop = true;
-            s.volume = .5;
-        });
+        this._siren.loop = true;
+        this._siren.volume = .5;
     }
 
     private _volumeChanged = (e: any) => {
@@ -48,7 +40,7 @@ export class GameSoundPlayer {
 
 
     reset() {
-        this._sirens.forEach(s => s.stop());
+        this._siren.stop();
         this._ghostEyes.stop();
         this._frightened.stop();
     }
@@ -66,7 +58,7 @@ export class GameSoundPlayer {
             if (frightSession != undefined) {
                 const volume = frightSession.isFinished ? .5 : 0;
 
-                this._sirens.forEach(s=>s.volume = volume);
+                this._siren.volume = volume;
 
                 if (frightSession.isFinished) {
                     this._frightened.stop();
@@ -175,16 +167,9 @@ export class GameSoundPlayer {
     }
 
     private playSiren(level: number) {
-        for (let i = 0; i < this._sirens.length; i++) {
-            const siren = this._sirens[i];
-
-            if (i == level) {
-                if (!siren.isPlaying) {
-                    siren.play();
-                }
-            } else {
-                siren.stop();
-            }
+        const siren = this._siren;
+        if (!siren.isPlaying) {
+            siren.play();
         }
     }
 }
