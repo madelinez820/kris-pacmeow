@@ -22,8 +22,6 @@ var loadState = new function () {
 
         var percentage = (pacManWebModulesLoadedCount / 93) * 100;
 
-        console.info(pacManWebModulesLoadedCount);
-
         p.style.width = percentage + "%";
 
         var scriptNameSpan = document.getElementById("progress-scriptname");

@@ -14,5 +14,6 @@ export enum SoundName {
     Siren2,
     Siren3,
     Siren4,
-    Siren5
+    Siren5,
+    Anthem
 }

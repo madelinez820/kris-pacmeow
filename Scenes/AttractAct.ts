@@ -34,6 +34,8 @@ export class AttractAct extends Act {
 
     constructor() {
         super();
+        // Engine.gameSounds.playAnthem();
+        // TODO: this mutes when howler mutes + it doesnt' stop if I press start before it gets to the howler mute function
 
         this._pos = new Point(45, 65);
 
@@ -75,7 +77,7 @@ export class AttractAct extends Act {
 
         const timeForEachOne = 2100;
 
-        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "cyan", "MR. MEOWCHU", pos);
+        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "cyan", "MR.MEOWCHU", pos);
 
         setTimeout(() => {
            pos = pos.add(gap);
