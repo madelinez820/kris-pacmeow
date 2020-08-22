@@ -4,7 +4,7 @@ import {SoundLookup} from "./SoundLookup";
 
 export class SoundLoader {
     private _loadedCount = 0;
-    private readonly _itemsToLoad = 16;
+    private readonly _itemsToLoad = 12;
 
     private readonly _sounds: SoundLookup;
 
@@ -24,11 +24,7 @@ export class SoundLoader {
         this._sounds[SoundName.Munch1] = this.loadAudio("snd/munch1.mp3");
         this._sounds[SoundName.Munch2] = this.loadAudio("snd/munch2.mp3");
         this._sounds[SoundName.PlayerStart] = this.loadAudio("snd/player_start.mp3");
-        this._sounds[SoundName.Siren1] = this.loadAudio("snd/siren.mp3");
-        this._sounds[SoundName.Siren2] = this.loadAudio("snd/siren2.mp3");
-        this._sounds[SoundName.Siren3] = this.loadAudio("snd/siren3.mp3");
-        this._sounds[SoundName.Siren4] = this.loadAudio("snd/siren4.mp3");
-        this._sounds[SoundName.Siren5] = this.loadAudio("snd/siren5.mp3");
+        this._sounds[SoundName.Siren] = this.loadAudio("snd/siren.mp3");
         this._sounds[SoundName.Anthem] = this.loadAudio("snd/bulgariannationalanthem.mp3");
     }
 

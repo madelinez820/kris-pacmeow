@@ -24,7 +24,7 @@ export class GameSoundPlayer {
         this._frightened = _loader.getSound(SoundName.Frightened);
         this._ghostEyes = _loader.getSound(SoundName.GhostEyes);
 
-        this._siren =  _loader.getSound(SoundName.Siren1);
+        this._siren =  _loader.getSound(SoundName.Siren);
 
         this._munch1 = _loader.getSound(SoundName.Munch1);
         this._munch2 = _loader.getSound(SoundName.Munch2);
