@@ -24,7 +24,7 @@ export class SoundLoader {
         this._sounds[SoundName.Munch1] = this.loadAudio("snd/munch1.mp3");
         this._sounds[SoundName.Munch2] = this.loadAudio("snd/munch2.mp3");
         this._sounds[SoundName.PlayerStart] = this.loadAudio("snd/player_start.mp3");
-        this._sounds[SoundName.Siren1] = this.loadAudio("snd/siren1.mp3");
+        this._sounds[SoundName.Siren1] = this.loadAudio("snd/siren.mp3");
         this._sounds[SoundName.Siren2] = this.loadAudio("snd/siren2.mp3");
         this._sounds[SoundName.Siren3] = this.loadAudio("snd/siren3.mp3");
         this._sounds[SoundName.Siren4] = this.loadAudio("snd/siren4.mp3");
