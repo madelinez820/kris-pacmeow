@@ -12,6 +12,8 @@ export class GameSoundPlayer {
     private readonly _munch2: SoundPlayer;
     private readonly _cutscene: SoundPlayer;
     private readonly _anthem: SoundPlayer;
+    private readonly _death: SoundPlayer;
+    private readonly _playerstart: SoundPlayer;
 
     constructor(private readonly _loader: SoundLoader) {
 
@@ -30,6 +32,8 @@ export class GameSoundPlayer {
         this._munch2 = _loader.getSound(SoundName.Munch2);
         this._cutscene = _loader.getSound(SoundName.CutScene);
         this._anthem = _loader.getSound(SoundName.Anthem);
+        this._death = _loader.getSound(SoundName.PacManDying);
+        this._playerstart = _loader.getSound(SoundName.PlayerStart);
 
         this._frightened.loop = true;
         this._ghostEyes.loop = true;
@@ -44,7 +48,6 @@ export class GameSoundPlayer {
         this._munch1.volume = .5;
         this._munch2.volume = .5;
         this._cutscene.volume = .4;
-        this._anthem.loop = true;
     }
 
     private _volumeChanged = (e: any) => {
@@ -54,7 +57,8 @@ export class GameSoundPlayer {
     }
 
 
-    reset() {
+    reset() { //TODO maybe add to this
+        console.log("RESET()")
         this._siren.stop();
         this._ghostEyes.stop();
         this._frightened.stop();
@@ -104,12 +108,31 @@ export class GameSoundPlayer {
         }
     }
 
+    muteAnthem(){
+        this._anthem.mute()
+    }
+
+    //doesn't mute anthem
     muteAll() {
-        Howler.mute(true);
+        this._siren.mute()
+        this._frightened.mute()
+        this._munch1.mute()
+        this._munch2.mute()
+        this._death.mute()
+        this._playerstart.mute()
+        // Howler.mute(true);
     }
 
     unmuteAll() {
-        Howler.mute(false);
+        console.log("UNMUTED")
+        // Howler.mute(false);
+        this._siren.unmute()
+        this._anthem.unmute()
+        this._frightened.unmute()
+        this._munch1.unmute()
+        this._munch2.unmute()
+        this._death.unmute()
+        this._playerstart.unmute()
     }
 
     powerPillEaten(): any {
@@ -154,7 +177,16 @@ export class GameSoundPlayer {
     }
 
     playAnthem(): any {
-        this.play(SoundName.Anthem);        
+        const anthem = this._anthem;
+        anthem.unmute(); 
+        anthem.stop(); //makes it so the anthem always starts at beginning when AttractAct(beginning scene) is loaded
+            if (!anthem.isPlaying) {
+                anthem.play();
+            }
+            else{
+                console.log("Anthem already playing")
+            }
+        // this.play(SoundName.Anthem); // TODO        
     }
 
     private play(soundName: SoundName) {

@@ -34,7 +34,7 @@ export class AttractAct extends Act {
 
     constructor() {
         super();
-        // Engine.gameSounds.playAnthem();
+        Engine.gameSounds.playAnthem();
         // TODO: this mutes when howler mutes + it doesnt' stop if I press start before it gets to the howler mute function
 
         this._pos = new Point(45, 65);
@@ -127,10 +127,11 @@ export class AttractAct extends Act {
 
         if (GameContext.keyboard.wasKeyPressed(Keyboard.enter)) {
             Engine.gameSounds.muteAll();
-            Engine.gameSounds.unmuteAll();
+            // Engine.gameSounds.unmuteAll();
             return ActUpdateResult.Finished;
         }
 
+        //starts the game
         if (GameContext.keyboard.wasKeyPressed(Keyboard.five)) {
             Engine.gameSounds.muteAll();
             Engine.gameSounds.unmuteAll();

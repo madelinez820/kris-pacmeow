@@ -21,6 +21,8 @@ export class PlayerIntroAct extends Act {
 
     constructor(private readonly _shouldDecreasePacLives: boolean, private readonly _isDemoMode = false) {
         super();
+        //TODO stop the bulgarian music
+        Engine.gameSounds.muteAnthem();
 
         MainWindow.actors.fruit.reset();
         MainWindow.actors.pacMan.reset(this._isDemoMode);

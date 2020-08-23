@@ -88,7 +88,6 @@ export class Keyboard {
         this._keyPresses[keyCode] = 0;
 
         const howLong = window.performance.now() - theEvent;
-
         return howLong < 100; 
     }
 
