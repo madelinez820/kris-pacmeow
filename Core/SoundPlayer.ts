@@ -6,7 +6,7 @@ export class SoundPlayer {
 
     private _loaded: boolean;
 
-    private readonly _howl: Howl;
+    private readonly _howl: typeof Howl;
 
     constructor(path: string, whenLoaded: () => void) {
 
