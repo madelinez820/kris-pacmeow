@@ -12,5 +12,6 @@ I played around with this repo (https://github.com/SteveDunn/Pacman) to create t
 - play it on http://localhost:8080/
 
 
-## License
+## License and Attributions
 GNU GENERAL PUBLIC LICENSE Version 3 [#](LICENSE.txt)
+most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
