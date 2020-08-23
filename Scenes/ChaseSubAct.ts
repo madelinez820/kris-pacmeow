@@ -64,7 +64,6 @@ export class ChaseSubAct {
 
     private _ghostEatenTimer: EggTimer;
 
-    private _timers: EggTimer[];
     private _tempSprites: TimedSpriteList;
 
     private _finished: boolean;
@@ -78,8 +77,6 @@ export class ChaseSubAct {
 
         this._tempSprites = new TimedSpriteList();
         this._ghosts = [];
-
-        this._timers = [];
 
         let justOffScreen = new Point(250, 140);
 
