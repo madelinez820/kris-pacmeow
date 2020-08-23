@@ -121,20 +121,23 @@ export class AttractAct extends Act {
 
     update(gameContext: GameContext): ActUpdateResult {
         if (GameContext.keyboard.wasKeyPressed(Keyboard.left)) {
+            console.log("?")
             this.startDemoGame();
             return ActUpdateResult.Finished;
         }
 
         if (GameContext.keyboard.wasKeyPressed(Keyboard.enter)) {
-            Engine.gameSounds.muteAll();
+            console.log("?")
+            // Engine.gameSounds.muteAll();
             // Engine.gameSounds.unmuteAll();
             return ActUpdateResult.Finished;
         }
 
         //starts the game
         if (GameContext.keyboard.wasKeyPressed(Keyboard.five)) {
-            Engine.gameSounds.muteAll();
-            Engine.gameSounds.unmuteAll();
+            console.log("COIN BUTTON")
+            // Engine.gameSounds.muteAll();
+            // Engine.gameSounds.unmuteAll(); //TODO this is the call in the bug, when I comment it out it's fine but then  no sound in start of game :(
             Engine.coinInserted();
             this._nextAct = new StartButtonAct();
             return ActUpdateResult.Finished;

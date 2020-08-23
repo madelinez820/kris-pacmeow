@@ -31,7 +31,7 @@ export class DemoAct extends Act {
         if (GameContext.keyboard.isKeyDown(Keyboard.five)) {
             Engine.coinInserted();
             this._nextAct = new StartButtonAct();
-            Engine.gameSounds.unmuteAll();
+            // Engine.gameSounds.unmuteAll();
             return ActUpdateResult.Finished;
         }
 

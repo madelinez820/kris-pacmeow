@@ -31,6 +31,7 @@ export class StartButtonAct extends Act {
         if (GameContext.keyboard.wasKeyPressed(Keyboard.one)) {
             MainWindow.newGame(1);
             Engine.useCredits(1);
+            Engine.gameSounds.unmuteAll();
             this._nextAct = new PlayerIntroAct(true);
 
             return ActUpdateResult.Finished;
@@ -39,6 +40,7 @@ export class StartButtonAct extends Act {
         if (GameContext.keyboard.wasKeyPressed(Keyboard.two) && Engine.credits >= 2) {
             MainWindow.newGame(2);
             Engine.useCredits(2);
+            Engine.gameSounds.unmuteAll();
             this._nextAct = new PlayerIntroAct(true);
             return ActUpdateResult.Finished;
         }
