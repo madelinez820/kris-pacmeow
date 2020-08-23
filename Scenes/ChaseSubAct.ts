@@ -208,7 +208,7 @@ export class ChaseSubAct {
         }
 
         if (this._copyrightVisible) {
-            canvas.drawText("© 1980 midway mfg. co.", "white", new Point(10, 220));
+            canvas.drawText("Happy 22nd Birthday Kris!", "white", new Point(10, 220));
         }
 
         if (this._ready) {

@@ -78,9 +78,9 @@ export class PlayerIntroAct extends Act {
 
         if (this._progress === 0) {
             if (MainWindow.gameStats.currentPlayerStats.playerIndex === 0) {
-                text = "PLAYER ONE";
+                text = "  PURRITO";
             } else {
-                text = "PLAYER TWO";
+                text = " PURRITO 2";
             }
 
             canvas.drawText(text, "cyan", TextPoints.playerTextPoint);

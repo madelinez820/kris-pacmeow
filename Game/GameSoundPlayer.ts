@@ -48,6 +48,7 @@ export class GameSoundPlayer {
         this._munch1.volume = .5;
         this._munch2.volume = .5;
         this._cutscene.volume = .4;
+        this._anthem.loop = true;
     }
 
     private _volumeChanged = (e: any) => {

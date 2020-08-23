@@ -70,18 +70,18 @@ export class AttractAct extends Act {
     }
 
     writeTextSlowly() {
-        this._offScreenCanvas.drawText("CHARACTER", "white", new Point(32, 12));
+        this._offScreenCanvas.drawText("CHARACTERS", "white", new Point(32, 12));
         const gap = new Point(0, 24);
 
         let pos = new Point(16, 30);
 
         const timeForEachOne = 2100;
 
-        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "cyan", "MR.MEOWCHU", pos);
+        this.drawGhostDescriptor(this._offScreenCanvas, this._blinky, "pink", "MR.MEOWCHU", pos);
 
         setTimeout(() => {
            pos = pos.add(gap);
-           this.drawGhostDescriptor(this._offScreenCanvas, this._pinky, "pink","BUNNYSITO", pos);
+           this.drawGhostDescriptor(this._offScreenCanvas, this._pinky, "purple","BUNNYSITO", pos);
         }, timeForEachOne);
 
         setTimeout(() => {
