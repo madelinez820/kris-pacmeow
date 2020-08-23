@@ -34,7 +34,7 @@ export class ScorePanel {
     }
 
     drawPlayerOneScore() {
-        this.drawPlayerText(0, "1UP", this._playerOneTextPos);
+        this.drawPlayerText(0, "P1", this._playerOneTextPos);
         let score: number = 0;
         if (MainWindow.gameStats.hasPlayerStats(0)) {
             score = MainWindow.gameStats.getPlayerStats(0).score;
@@ -58,7 +58,7 @@ export class ScorePanel {
 
     drawPlayerTwoScore() {
         if (MainWindow.gameStats.amountOfPlayers > 1) {
-            this.drawPlayerText(1, "2UP", this._playerTwoTextPos);
+            this.drawPlayerText(1, "P2", this._playerTwoTextPos);
             let score: number = 0;
 
             if (MainWindow.gameStats.hasPlayerStats(1)) {

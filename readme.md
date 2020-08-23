@@ -6,9 +6,8 @@ I played around with this repo (https://github.com/SteveDunn/Pacman) to create t
 
 ## To run on dev
 - ```npm install -g typescript```
-- ```tsc```
-- ```cd dist```
-- ```npm start```
+- ```tsc``` or ```npm run build```
+- ```cd js && npm start``` or ```npm start```
 - play it on http://localhost:8080/
 
 
