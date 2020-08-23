@@ -208,7 +208,7 @@ export class ChaseSubAct {
         }
 
         if (this._copyrightVisible) {
-            canvas.drawText("Happy 22nd Birthday Kris!", "white", new Point(10, 220));
+            canvas.drawText("Happy 23rd Birthday Kris!", "white", new Point(10, 220));
         }
 
         if (this._ready) {
