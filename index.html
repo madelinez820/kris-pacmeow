@@ -36,7 +36,6 @@
                 families: ['Joytstix']
             }
         });
-        // alert("test") //TODO doesn't work to help audiocontext
     </script>
 
     <script src="lib/howler.core.js"></script>
@@ -51,9 +50,7 @@
             LOADING!
         </h1>
 
-        <h2>Scripts...</h2>
-        <!-- TODO see if this works -->
-        <button id="audiocontextbutton">Take me to the Arcade</button> 
+        <h2 style="padding-left: 20px">Scripts...</h2>
 
         <div id="progress-bar" class="all-rounded">
             <div id="progress-bar-scripts-percentage" class="all-rounded" style="width: 0%">
@@ -61,13 +58,17 @@
             </div>
         </div>
 
-        <h2>Assets...</h2>
+        <h2 style="padding-left: 20px">Assets...</h2>
 
         <div id="progress-bar-assets" class="all-rounded">
             <div id="progress-bar-assets-percentage" class="all-rounded" style="width: 0%">
                 <span id="progress-assetname"></span>
             </div>
         </div>
+
+                <!-- <button id="audiocontextbutton" style="visibility: hidden" class="all-rounded">
+            <h1>Continue</h1></button>  -->
+            <div id="audiocontextbutton" style="visibility: hidden; text-align: center; background-color: white; color: green; display: inline" class="all-rounded">CONTINUE</div>
     </div>
 
     <div id="controlPanel" class="controlPanel">
@@ -136,7 +137,6 @@
 <script>
 
     controlPanel.hide();
-    // alert("MEOW") //TODO doesn't work to help audioContext
     require.config({
         waitSeconds: 90,
         baseUrl: ".",
