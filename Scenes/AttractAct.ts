@@ -31,7 +31,7 @@ export class AttractAct extends Act {
 
     constructor() {
         super();
-         Engine.gameSounds.playAnthem(); //TODO 
+         Engine.gameSounds.playAnthem(); //TODO need to initiate user action before this is clicked or audioContext will throw error
 
         this._pos = new Point(45, 65);
 
@@ -114,23 +114,16 @@ export class AttractAct extends Act {
 
     update(gameContext: GameContext): ActUpdateResult {
         if (GameContext.keyboard.wasKeyPressed(Keyboard.left)) {
-            console.log("?")
             this.startDemoGame();
             return ActUpdateResult.Finished;
         }
 
         if (GameContext.keyboard.wasKeyPressed(Keyboard.enter)) {
-            console.log("?")
-            // Engine.gameSounds.muteAll();
-            // Engine.gameSounds.unmuteAll();
             return ActUpdateResult.Finished;
         }
 
-        //starts the game
+        //coin button
         if (GameContext.keyboard.wasKeyPressed(Keyboard.five)) {
-            console.log("COIN BUTTON")
-            // Engine.gameSounds.muteAll();
-            // Engine.gameSounds.unmuteAll(); //TODO this is the call in the bug, when I comment it out it's fine but then  no sound in start of game :(
             Engine.coinInserted();
             this._nextAct = new StartButtonAct();
             return ActUpdateResult.Finished;

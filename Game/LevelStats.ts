@@ -41,8 +41,6 @@ export class LevelStats {
 
     private _currentMap: string[];
     private _pillsRemaining: number;
-
-    //todo: move to another class (and related properties)
     private static readonly map: string[] = [
         // 0,0                     29,0
         "                             ",

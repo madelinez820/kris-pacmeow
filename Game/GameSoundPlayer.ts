@@ -121,12 +121,10 @@ export class GameSoundPlayer {
         this._munch2.mute()
         this._death.mute()
         this._playerstart.mute()
-        // Howler.mute(true);
     }
 
     unmuteAll() {
         console.log("UNMUTED")
-        // Howler.mute(false);
         this._siren.unmute()
         this._anthem.unmute() //TODO
         this._frightened.unmute()
@@ -186,8 +184,7 @@ export class GameSoundPlayer {
             }
             else{
                 console.log("Anthem already playing")
-            }
-        // this.play(SoundName.Anthem); // TODO        
+            }      
     }
 
     private play(soundName: SoundName) {

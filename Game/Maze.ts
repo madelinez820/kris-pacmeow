@@ -231,7 +231,6 @@ export class Maze extends Sprite {
         }
 
         return TileContent.Nothing;
-        //throw new RangeError("Cell at ${cell.x}, ${cell.y} contained '${a}' - don't know what this is!");
     };
 
     getTopLeftCanvasPosition(cellPosition: Point): Point {
@@ -243,7 +242,6 @@ export class Maze extends Sprite {
         canvas.fillRect(color, topLeft.minus(Point.one), new Vector2D(9, 9));
     }
 
-    //todo: use clamp
     constrainCell(cell: Point): Point {
 
         let x = cell.x;
