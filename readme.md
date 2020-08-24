@@ -17,7 +17,7 @@ PS: Sorry I know there are bugs 😂
 ## License and Attributions
 GNU GENERAL PUBLIC LICENSE Version 3 [#](LICENSE.txt)
 
-- Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; kris-pacmeow large consists of code from Steve's repo (I added custom assets and made slight code / logic changes here and there).
+- Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; kris-pacmeow largely consists of code from Steve's repo (I added custom assets and made slight code / logic changes here and there). I tried to fork this originally but ended up creating a new repo instead (kris-pacmeow was private during development to maintain the element of surprise, and I couldn't figure out how to create a private fork of a public repo)
 - Most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
 - I edited some 8 bit music, and here are the original sources:
     - anthem.mp3: https://www.youtube.com/watch?v=iN4chNXPikQ
