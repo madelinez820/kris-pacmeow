@@ -2,7 +2,7 @@
  
  See it at http://kris-pacmeow.herokuapp.com/. Play it with sound on for the full effect.
  
-Happy Birthday; обичам теб много 🥰
+Happy Birthday; обичам те много 🥰
 
 PS: Sorry I know there are bugs 😂
 
