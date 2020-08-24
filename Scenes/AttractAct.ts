@@ -31,7 +31,7 @@ export class AttractAct extends Act {
 
     constructor() {
         super();
-        Engine.gameSounds.playAnthem();
+        // Engine.gameSounds.playAnthem();
 
         this._pos = new Point(45, 65);
 
