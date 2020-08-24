@@ -2,7 +2,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     "outDir": "js",
-    "watch": true, // TODO see if setting this to false makes heroku work
+    "watch": false, // TODO see if setting this to false makes heroku work
     "alwaysStrict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
