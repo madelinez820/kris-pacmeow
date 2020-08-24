@@ -58,7 +58,7 @@ export class GameSoundPlayer {
     }
 
 
-    reset() { //TODO maybe add to this
+    reset() { 
         console.log("RESET()")
         this._siren.stop();
         this._ghostEyes.stop();

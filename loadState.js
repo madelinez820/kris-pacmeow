@@ -45,6 +45,8 @@ var loadState = new function () {
         } else {
             var audioButton = document.getElementById("audiocontextbutton");
             audioButton.style.visibility = "visible";
+            var sourceCodeLink = document.getElementById("sourcecodelink");
+            sourceCodeLink.style.visibility = "visible";
             audioButton.onclick = function (event){
                 document.getElementById("loader").hidden = "true";
                 document.getElementById("controlPanel").style.visibility = "visible";   

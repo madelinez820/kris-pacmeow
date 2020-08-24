@@ -42,6 +42,28 @@
     <script src="lib/hammer.min.js"></script>
     <script src="loadState.js"></script>
     <script src="controlPanel.js"></script>
+    <style>
+        #audiocontextbutton{
+            background-color: white; 
+            visibility: hidden;
+            text-align: center;
+            color: #629eee; 
+            display: inline;
+            cursor: pointer;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 20px;
+        }
+        #sourcecodelink{
+            visibility: hidden;
+            text-align: center;
+            color: white;
+            display: inline;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body id="body">
@@ -66,9 +88,12 @@
             </div>
         </div>
 
-                <!-- <button id="audiocontextbutton" style="visibility: hidden" class="all-rounded">
-            <h1>Continue</h1></button>  -->
-            <div id="audiocontextbutton" style="visibility: hidden; text-align: center; background-color: white; color: green; display: inline" class="all-rounded">CONTINUE</div>
+        <br>
+        <div style="text-align: center;">
+            <div id="audiocontextbutton" 
+            class="all-rounded">CONTINUE</div>
+            <a href="https://github.com/madelinez820/kris-pacmeow" id="sourcecodelink" class="all-rounded">Source Code / License</a>
+        </div>
     </div>
 
     <div id="controlPanel" class="controlPanel">
