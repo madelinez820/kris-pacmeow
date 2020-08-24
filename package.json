@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "node server.js",
-    "build": "tsc",
-    "postinstall": "npm run build",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@types/howler": "^2.0.2",
     "connect": "^3.6.2",
-    "serve-static": "^1.12.3"
+    "serve-static": "^1.12.3",
+    "typescript": "^4.0.2"
   }
 }
