@@ -31,6 +31,7 @@ export class AttractAct extends Act {
 
     constructor() {
         super();
+        console.log("Engine.gameSounds.playAnthem()")
          Engine.gameSounds.playAnthem(); //TODO need to initiate user action before this is clicked or audioContext will throw error
 
         this._pos = new Point(45, 65);
