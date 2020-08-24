@@ -16,5 +16,6 @@ PS: Sorry I know there are bugs 😂
 
 ## License and Attributions
 GNU GENERAL PUBLIC LICENSE Version 3 [#](LICENSE.txt)
+
 Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; this repo is largely made of code in Steve's repo (I added custom assets and made slight code / logic changes here and there).
 Most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
