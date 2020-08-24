@@ -4,6 +4,8 @@
  
 Happy Birthday <3 Обичам теб много сега и завинаги.
 
+PS: Sorry I know there are bugs 😂
+
 ## To run on dev
 - ```npm install```
 - ```tsc``` or ```npm run build```
