@@ -53,7 +53,7 @@ export class StartButtonAct extends Act {
     }
 
     draw(canvas: Canvas): void {
-        canvas.drawText("PUSH START BUTTON", "orange", new Point(50, 115));
+        canvas.drawText("PUSH BUTTON TO START", "yellow", new Point(30, 115));
 
         let text: string;
         if (Engine.credits < 2) {
@@ -62,9 +62,8 @@ export class StartButtonAct extends Act {
         } else {
             text = "1 OR 2 PLAYERS";
         }
-        canvas.drawText(text, "cyan", new Point(70, 145));
+        canvas.drawText(text, "#39FF14", new Point(60, 145));
 
-        canvas.drawText("BONUS PAC-MAN FOR 10000 PTS", "white", new Point(0, 175));
-        canvas.drawText("(C) 1980 MIDWAY MFG. CO.", "white", new Point(15, 190));
+        canvas.drawText(" HAPPY 23RD BIRTHDAY KRIS! ", "white", new Point(0, 175));
     }
 }

@@ -22,7 +22,7 @@ export class PlayerGameOverAct extends GameOverAct {
             text = "PLAYER TWO";
         }
 
-        canvas.drawText(text, "cyan", TextPoints.playerTextPoint);
+        canvas.drawText(text, "#39FF14", TextPoints.playerTextPoint);
     }
 
     get nextAct(): Act {

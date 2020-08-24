@@ -83,7 +83,7 @@ export class PlayerIntroAct extends Act {
                 text = " PURRITO 2";
             }
 
-            canvas.drawText(text, "cyan", TextPoints.playerTextPoint);
+            canvas.drawText(text, "#39FF14", TextPoints.playerTextPoint);
         }
 
         canvas.drawText("READY!", "yellow", TextPoints.readyPoint);
