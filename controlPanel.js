@@ -13,8 +13,8 @@ var controlPanel = new function () {
         window.dispatchEvent(new CustomEvent('volumeChanged', { 'detail': pc }));
     }
 
-    this.hide = function () {
-        console.info("Hiding control panel");
+    this.hide = function () { 
+        // console.info("Hiding control panel");
 
         var ele = document.getElementById("controlPanel");
         ele.style.opacity = 0;

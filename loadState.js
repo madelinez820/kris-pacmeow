@@ -43,10 +43,16 @@ var loadState = new function () {
         if (scriptsFinished === false || assetsFinished === false) {
             setTimeout(self.checkFinished);
         } else {
-            document.getElementById("loader").hidden = "true";
-            document.getElementById("controlPanel").style.visibility = "visible";
+            var audioButton = document.getElementById("audiocontextbutton");
+            audioButton.style.visibility = "visible";
+            var sourceCodeLink = document.getElementById("sourcecodelink");
+            sourceCodeLink.style.visibility = "visible";
+            audioButton.onclick = function (event){
+                document.getElementById("loader").hidden = "true";
+                document.getElementById("controlPanel").style.visibility = "visible";   
+                self.__finishedLoading = true;        
+            }
             console.info("setting __finishedLoading!");
-            self.__finishedLoading = true;
         }
     };
 }
