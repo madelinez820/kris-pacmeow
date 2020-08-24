@@ -2,7 +2,7 @@
  
  See it at http://kris-pacmeow.herokuapp.com/.
  
-Happy Birthday <3 Обичам теб много сега и завинаги.
+Happy Birthday; обичам теб много 🥰
 
 PS: Sorry I know there are bugs 😂
 
@@ -17,5 +17,11 @@ PS: Sorry I know there are bugs 😂
 ## License and Attributions
 GNU GENERAL PUBLIC LICENSE Version 3 [#](LICENSE.txt)
 
-Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; this repo is largely made of code in Steve's repo (I added custom assets and made slight code / logic changes here and there).
-Most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
+- Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; kris-pacmeow large consists of code from Steve's repo (I added custom assets and made slight code / logic changes here and there).
+- Most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
+- I edited some 8 bit music, and here are the original sources:
+    - anthem.mp3: https://www.youtube.com/watch?v=iN4chNXPikQ
+    - cutscene.mp3: https://www.youtube.com/watch?v=hAbzqF0mMlk
+    - frightened.mp3: https://www.youtube.com/watch?v=3SHzjXdwJiU
+    - player_start.mp3: https://www.youtube.com/watch?v=0qIBVV8wGpM
+    - siren.mp3: https://www.youtube.com/watch?v=KuNi-NL8de4
