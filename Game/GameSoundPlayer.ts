@@ -126,7 +126,7 @@ export class GameSoundPlayer {
     unmuteAll() {
         console.log("UNMUTED")
         this._siren.unmute()
-        this._anthem.unmute() //TODO
+        this._anthem.unmute() 
         this._frightened.unmute()
         this._munch1.unmute()
         this._munch2.unmute()
