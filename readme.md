@@ -1,6 +1,6 @@
 ﻿# Customized Pacman for Kris
  
- See it at http://kris-pacmeow.herokuapp.com/.
+ See it at http://kris-pacmeow.herokuapp.com/. Play it with sound on for the full effect.
  
 Happy Birthday; обичам теб много 🥰
 
