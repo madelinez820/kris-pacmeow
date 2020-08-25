@@ -70,7 +70,9 @@ export class GhostLogic {
             }
 
             if (avail.length === 0) {
-                throw new Error("No choices to pick from!");
+                console.log("no choices to pick from error")
+                return Direction.Right; //TODO see if this works
+                //throw new Error("No choices to pick from!");
             }
 
             const dir = this.pickShortest(tile, targetCell, avail);
