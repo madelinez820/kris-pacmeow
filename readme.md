@@ -4,7 +4,7 @@
  
 Happy Birthday; обичам те много 🥰
 
-PS: Sorry I know there are bugs 😂
+PS: Sorry I know there are a few bugs 😂
 
 ## To run on dev
 - ```npm install```
@@ -17,9 +17,9 @@ PS: Sorry I know there are bugs 😂
 ## License and Attributions
 GNU GENERAL PUBLIC LICENSE Version 3 [#](LICENSE.txt)
 
-- Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; kris-pacmeow largely consists of code from Steve's repo (I added custom assets and made slight code / logic changes here and there). I tried to fork this originally but ended up creating a new repo instead (kris-pacmeow was private during development to maintain the element of surprise, and I couldn't figure out how to create a private fork of a public repo)
+- Thank you to https://github.com/SteveDunn/Pacman - most of the game logic and framework / main assets are from here; kris-pacmeow largely consists of code from Steve's repo (I added custom assets and made code / logic changes here and there). I tried to fork this originally but ended up creating a new repo instead (kris-pacmeow was private during development to maintain the element of birthday surprise, and I couldn't figure out how to create a private fork of a public repo)
 - Most of the custom sprites / images were created by me, but insertcoin.PNG was made by https://www.flaticon.com/authors/freepik from www.flaticon.com
-- I edited some 8 bit music, and here are the original sources:
+- I edited some 8 bit music; here are the original sources:
     - anthem.mp3: https://www.youtube.com/watch?v=iN4chNXPikQ
     - cutscene.mp3: https://www.youtube.com/watch?v=hAbzqF0mMlk
     - frightened.mp3: https://www.youtube.com/watch?v=3SHzjXdwJiU
